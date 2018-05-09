@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dev.edmt.androidcamerarecognitiontext.FaceReconizerActivity"
+        android:id="@+id/activity_face_reconizer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/speaker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:background="@android:color/background_dark"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@drawable/ic_keyboard_voice_black_24dp" />
+
+        <dev.edmt.androidcamerarecognitiontext.Objects.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <dev.edmt.androidcamerarecognitiontext.Objects.GraphicOverlay
+                android:id="@+id/faceOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </dev.edmt.androidcamerarecognitiontext.Objects.CameraSourcePreview>
+
+    </LinearLayout>
+
